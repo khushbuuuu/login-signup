@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+h5{
+    font-size: small;
+}
+body{
+    background: rgb(198, 198, 198);
+}
+.line{
+    margin-left: 11vw;
+    width: 80px;
+    
+    
+}
+.btn2{
+    margin-top: 25px;
+    border-color: rgb(94, 3, 151);
+    color: rgb(94, 3, 151);
+    margin-left: 36vw;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    background-color: white;
+}
+.im{
+    background-image: url("../assets/airplane-flying-clouds\ 1.png");
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+    width: 40vw;
+    height: 82vh;
+    background-repeat:no-repeat;
+}
+.txt{
+    margin-top: 5vw;
+    color: rgb(94, 3, 151);
+}
+.btn{
+        
+    background-color: rgb(94, 3, 151);
+    color: white;
+    height:30px;
+    width: 40vw;
+}
+.head{
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.para{
+    margin-top: 15px;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.visi{
+    position: absolute;
+   z-index: 2;
+    margin-top: 50vh;
+    height: 35vh;
+    width: 30vw;
+    color: white;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(1, 32, 62,0.7);
+    
+    
+}
+.parent{
+    background: white;
+    position: absolute;
+    margin-top:7vh;
+    margin-left: 4.5vw;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    width:90vw;
+    height:85vh;
+}
+.child1{
+    position: relative;
+    height:85vh;
+    width:45vw;
+    
+}
+.child2{
+        
+    
+    height:85vh;
+    width:45vw;
+}
+.formgroup{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.forminm{
+    height:30px;
+    width:19.7vw;
+}
+.formin{
+    height:30px;
+    width: 40vw;
+
+}
+
