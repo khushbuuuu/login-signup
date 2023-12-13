@@ -15,6 +15,7 @@ const exp = require('constants');
 
 app.set("view engine", "hbs");
 app.set("views", "views")
+hbs.registerPartials(part);
 app.use(express.static('frontend'))
 
          
@@ -22,7 +23,9 @@ app.use(express.static('frontend'))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
   
-
+app.get("/" ,(req,res)=>{
+    res.render("register")
+})
 
 app.get("/login", (req,res)=>{
     res.render("login");
@@ -47,16 +50,16 @@ app.post("/register", async (req,res)=>{
 
             })
             const userr = await user.save();
-            res.redirect('/home')
+            res.render("home",{user:user});
 
         }else{
-            res.send("passwords not matching")
+            res.render("passnotmatch")
         }
 
 
 
     }catch(error){
-        res.status(400).send(error);
+        res.status(400).render("errorinr");
     }
 })
 app.post("/login", async(req,res)=>{
@@ -68,29 +71,19 @@ app.post("/login", async(req,res)=>{
         
         
         if(usermail.password===pass){
-            res.status(201).redirect('/home');
+            res.status(201).render("home", {user:usermail});
 
         }
         else{
            
-                res.status(400).send("wrong credentials")
+                res.status(400).render("pnotcor")
        
         }
 
-        app.get('/home', async(req, res) => {
-            try {
-                const data = await Register.findById(req.params.id);
-                res.render('home', { data });
-              } catch (error) {
-                console.error(error);
-                res.status(500).send('Internal Server Error');
-              }
-            
-
-          });
+        
 
     }catch{
-        res.status(400).send("invalid credentials")
+        res.status(400).render("errorinl")
     }
 })
 app.listen(port, ()=>{
