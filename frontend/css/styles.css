@@ -19,16 +19,7 @@ body{
 .error{
     color: red;
 }
-.btn2{
-    margin-top: 25px;
-    border-color: rgb(94, 3, 151);
-    color: rgb(94, 3, 151);
-    margin-left: 36vw;
-    height: 30px;
-    width: 70px;
-    text-decoration: none;
-    background-color: white;
-}
+
 .im{
     background-image: url("../assets/airplane-flying-clouds\ 1.png");
     position: absolute;
@@ -59,41 +50,41 @@ body{
     margin-left: 20px;
     margin-right: 20px;
 }
-.visi{
-    position: absolute;
-   z-index: 2;
-    margin-top: 50vh;
-    height: 35vh;
-    width: 30vw;
-    color: white;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(1, 32, 62,0.7);
-    
-    
-}
+  
+
 .parent{
     background: white;
     position: absolute;
     margin-top:7vh;
-    margin-left: 4.5vw;
+    margin-left: 20vw;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
-    width:90vw;
-    height:85vh;
+    align-items: center;
+    width:55vw;
+    height:70vh;
 }
+
 .child1{
-    position: relative;
-    height:85vh;
-    width:45vw;
-    
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.btn2{
+    margin-top: 25px;
+    border-color: rgb(94, 3, 151);
+    color: rgb(94, 3, 151);
+    margin-left: 30vw;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    background-color: white;
 }
 .child2{
         
-    
-    height:85vh;
-    width:45vw;
+    margin-left: 20px;
+    height:70vh;
+    width:55vw;
 }
 .formgroup{
     margin-top: 10px;
@@ -108,4 +99,107 @@ body{
     width: 40vw;
 
 }
+.head2{
+    font-size: 24px;
+}
+.para2{
+    font-size: smaller;
+    margin-right: 18px;
+    
+}
+@media only screen and (min-width: 768px) {
+    
+    .visi{
+        position: absolute;
+       z-index: 2;
+        margin-top: 50vh;
+        height: 35vh;
+        width: 30vw;
+        color: white;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(1, 32, 62,0.7);
+        
+        
+    }
+    .parent{
+        background: white;
+        position: absolute;
+        margin-top:7vh;
+        margin-left: 4.5vw;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        width:90vw;
+        height:85vh;
+    }
+    .child1{
+        position: relative;
+        height:85vh;
+        width:45vw;
+        visibility: visible;
+        
+    }
+    .child2{
+        
+       
+        height:85vh;
+        width:45vw;
+    }
+    .btn2{
+        margin-top: 25px;
+        border-color: rgb(94, 3, 151);
+        color: rgb(94, 3, 151);
+        margin-left: 36vw;
+        height: 30px;
+        width: 70px;
+        text-decoration: none;
+        background-color: white;
+    }
+    
+    
+}
+@media only screen and ( min-width: 600px){
+    .head{
+        color:white;
+    }
+    .parent{
+        background: white;
+        position: absolute;
+        margin-top:7vh;
+        margin-left: 4.5vw;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        width:90vw;
+        height:85vh;
+    }
+    .child2{
+        
+        
+        height:85vh;
+        width:45vw;
+    }
+    .child1{
+        position: relative;
+        height:85vh;
+        width:45vw;
+        visibility: visible;
+        
+    }
+    
+    .head2{
+        font-size: 26px;
+    }
+    .para2{
+        font-size: small;
+        margin-right: 10px;
+        
+    }
+    
+    
+}
+
 
